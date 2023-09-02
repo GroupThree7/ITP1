@@ -1,0 +1,57 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int sumVector(vector <int> &num);
+
+int main(){
+
+vector<int>myVector;
+int num;
+
+cout << num;
+cout << "Input a number:";
+while(true)
+{
+    cin >> num;
+    if(num == -1)
+    {
+        break;
+    }
+
+    myVector.push_back(num);
+}
+int results = sumVector(myVector);
+cout << "The Sum of all tne Numbers are: " << results;
+
+return 0;
+}
+
+int sumVector(vector <int> &num)
+{
+
+   int sum = 0;
+    for (int i = 0; i < num.size(); i++) {
+        sum += num[i];
+    }
+
+    return sum;
+}
+
+
+
+ product= num *567;
+    cout<< product<<endl;
+
+    quotient = product / 9;
+     cout<< quotient<<endl;
+
+
+      sum = quotient+ 7492;
+     cout<< sum <<endl;
+
+
+     difference = sum-498;
+     cout<< difference<<endl;
+
